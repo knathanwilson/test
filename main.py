@@ -1,10 +1,11 @@
 
 from flask import Flask, request, redirect, Response, make_response, url_for
 
-app = flask(__name__)
+app = Flask(__name__)
 
 @app.route('/')
-def index():return 'this is working???'
+def index():
+	return 'this is working???'
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
